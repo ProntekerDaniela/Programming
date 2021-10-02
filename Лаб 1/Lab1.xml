@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<companyList>
+    <company ID="1">
+        <Name_of_company>ТОВ «ЕПАМ СИСТЕМЗ»</Name_of_company>
+        <Number_of_employees>60000</Number_of_employees>
+        <Product_name>Комп’ютерне програмування</Product_name>
+        <Country>Україна</Country>
+    </company>
+    <company ID="2">
+        <Name_of_company>ПІІ «ТОЙОТА-УКРАЇНА»</Name_of_company>
+        <Number_of_employees>10500</Number_of_employees>
+        <Product_name>Торгiвля автомобiлями та легковими автотранспортними засобами</Product_name>
+        <Country>Україна</Country>
+    </company>
+    <company ID="3">
+        <Name_of_company>ТОВ «БАЙЄР»</Name_of_company>
+        <Number_of_employees>12300</Number_of_employees>
+        <Product_name>Оптова торгiвля хiмiчними продуктами</Product_name>
+        <Country>Україна</Country>
+    </company>
+    <company ID="4">
+        <Name_of_company>ТОВ «ІНФОПУЛЬС УКРАЇНА»</Name_of_company>
+        <Number_of_employees>45000</Number_of_employees>
+        <Product_name>Комп’ютерне програмування</Product_name>
+        <Country>Україна</Country>
+    </company>
+    <company ID="5">
+        <Name_of_company>ПАТ «СЛОВ'ЯНСЬКІ ШПАЛЕРИ -КФТП»</Name_of_company>
+        <Number_of_employees>26000</Number_of_employees>
+        <Product_name>Виробництво шпалер</Product_name>
+        <Country>Україна</Country>
+    </company>
+</companyList>
