@@ -23,9 +23,9 @@ namespace Lab3._1DB
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
-                List<Table> stud = un.Table.ToList<Table>();
+                List<Table> stud = st.Table.ToList<Table>();
                 dataGridView1.DataSource = stud;
             }
 
@@ -35,9 +35,9 @@ namespace Lab3._1DB
         {
             dataGridView1.Columns.Clear();
 
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
-                stud = un.Table.ToList<Table>()
+                stud = st.Table.ToList<Table>()
                     .Where((stud) => stud.course == numCourse.Value)
                     .ToList<Table>();  
             }
@@ -48,9 +48,9 @@ namespace Lab3._1DB
         {
             dataGridView1.Columns.Clear();
 
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
-                stud = un.Table.ToList<Table>()
+                stud = st.Table.ToList<Table>()
                     .Where((stud) => stud.name.ToLower().Contains(textFilterName.Text.ToLower()))
                     .ToList<Table>();
             }
@@ -60,9 +60,9 @@ namespace Lab3._1DB
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             dataGridView1.Columns.Clear();
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
-                stud = un.Table.ToList<Table>().OrderBy(stud => stud.rate)
+                stud = st.Table.ToList<Table>().OrderBy(stud => stud.rate)
                 .Skip(1)
                 .ToList<Table>();
             }
@@ -77,9 +77,9 @@ namespace Lab3._1DB
         private void MaxValueRate_Click(object sender, EventArgs e)
         {
             dataGridView1.Columns.Clear();
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
-                stud = un.Table.ToList<Table>().OrderByDescending(stud => stud.rate)
+                stud = st.Table.ToList<Table>().OrderByDescending(stud => stud.rate)
                .Take(1)
                .ToList<Table>();
             }
@@ -88,7 +88,7 @@ namespace Lab3._1DB
        
         private void count_Click(object sender, EventArgs e)
         {
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
                 MessageBox.Show($"All students: {un.Table.ToList<Table>().Count(stud => stud.course == numCourse.Value)}");
             }
@@ -96,7 +96,7 @@ namespace Lab3._1DB
 
         private void buttonRate_Click(object sender, EventArgs e)
         {
-            using (UniversityContext un = new UniversityContext())
+            using (UniversityContext st = new UniversityContext())
             {
                 MessageBox.Show($"Student were rate>60: {un.Table.ToList<Table>().Count((stud) => stud.rate>60)}");
             }
