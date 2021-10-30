@@ -1,0 +1,5 @@
+C:\Users\админ\Desktop\3_2\Lab.rob3_2\obj\Debug\Lab.rob3_2.csprojAssemblyReference.cache
+C:\Users\админ\Desktop\3_2\Lab.rob3_2\obj\Debug\Lab.rob3_2.Form1.resources
+C:\Users\админ\Desktop\3_2\Lab.rob3_2\obj\Debug\Lab.rob3_2.Properties.Resources.resources
+C:\Users\админ\Desktop\3_2\Lab.rob3_2\obj\Debug\Lab.rob3_2.csproj.GenerateResource.cache
+C:\Users\админ\Desktop\3_2\Lab.rob3_2\obj\Debug\Lab.rob3_2.csproj.CoreCompileInputs.cache
